@@ -2,6 +2,79 @@
 
 @import "variables";
 
-*{
+* {
   box-sizing: border-box;
 }
+
+// ==================== start HEADER ==================== //
+header::before {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: #000;
+  opacity: 0.5;
+  z-index: 5;
+}
+
+#header {
+  background: url("../img/ovation-header-01.jpg") no-repeat center center fixed;
+  background-size: cover;
+  height: 90vh;
+  overflow: hidden;
+  z-index: -2;
+
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+
+  .socials {
+    z-index: 10;
+    padding-top: 30px;
+
+    ul {
+      width: 230px;
+      display: flex;
+      flex-direction: row;
+      justify-content: space-evenly;
+
+      a{
+        color: #ffffff;
+        font-size: 1.3rem;
+        opacity: 1;
+        
+        :hover{
+          opacity: 0.8;
+        }
+      }
+    }
+  }
+
+  .header-title {
+    z-index: 10;
+    color: #ffffff;
+    text-transform: uppercase;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 40%;
+
+    h1 {
+      font-size: 4.5rem;
+      font-weight: 600;
+      padding-bottom: 15px;
+    }
+
+    p {
+      font-size: 1.1rem;
+      letter-spacing: 2px;
+    }
+  }
+}
+
+// ==================== end HEADER ==================== //
