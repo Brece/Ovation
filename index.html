@@ -14,7 +14,7 @@
     <!--start HEADER -->
     <header>
       <div id="header">
-        <nav class="socials">
+        <div class="socials">
           <ul>
             <li>
               <a href="#"><i class="fab fa-instagram"></i></a>
@@ -32,7 +32,7 @@
               <a href="#"><i class="fab fa-spotify"></i></a>
             </li>
           </ul>
-        </nav>
+        </div>
 
         <div class="header-title">
           <h1>Ovation</h1>
@@ -43,24 +43,57 @@
     <!--end HEADER -->
 
     <!-- start NAV-BAR -->
-    <aside>
-      <div>
-        <a href="#"><i class="fas fa-bars"></i></a>
-        <p>sidebar</p>
+    <div id="fixed-nav">
+      <div class="side-bar">
+        <div>
+          <a href="#"><i class="fas fa-bars"></i></a>
+          <p>sidebar</p>
+        </div>
       </div>
-    </aside>
-    
-    <nav id="fixed-nav">
-      <ul>
-        <li><a href="#">home</a></li>
-        <li><a href="#">about</a></li>
-        <li><a href="#">music</a></li>
-        <li><a href="#">videos</a></li>
-        <li><a href="#">photos</a></li>
-        <li><a href="#">news</a></li>
-        <li><a href="#">contact</a></li>
-      </ul>
-    </nav>
+      <nav class="fixed-shortcuts">
+        <ul>
+          <li>
+            <a href="#" class="active">home</a>
+          </li>
+          <li>
+            <a href="#">about<i class="fas fa-sort-down"></i></a>
+            <div class="sub-menu">
+              <ul>
+                <li>theme setup</li>
+                <li>theme support</li>
+                <li>guided transfer customers</li>
+                <li>self-hosted customers</li>
+                <li>themes by wordpress</li>
+              </ul>
+            </div>
+          </li>
+          <li>
+            <a href="#">music<i class="fas fa-sort-down"></i></a>
+            <div class="sub-menu">
+              <ul>
+                <li>chaos in reverse</li>
+                <li>all together alone</li>
+                <li>everything under the moon</li>
+              </ul>
+            </div>
+          </li>
+          <li>
+            <a href="#">videos</a>
+          </li>
+          <li>
+            <a href="#">photos</a>
+          </li>
+          <li>
+            <a href="#">news</a>
+          </li>
+          <li>
+            <a href="#">contact</a>
+          </li>
+        </ul>
+      </nav>
+    </div>
     <!-- end NAV-BAR -->
+
+    <div id="placeholder"></div>
   </body>
 </html>
