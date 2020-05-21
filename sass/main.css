@@ -99,7 +99,7 @@ header::before {
   letter-spacing: 2px;
 }
 
-#fixed-nav {
+.fixed-nav {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -107,7 +107,7 @@ header::before {
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
           flex-direction: row;
-  background: greenyellow;
+  background: #ffffff;
   width: 100%;
   height: 80px;
   -webkit-box-align: center;
@@ -119,13 +119,13 @@ header::before {
   position: relative;
 }
 
-#fixed-nav .side-bar {
+.fixed-nav .side-bar {
   display: inline-block;
   position: absolute;
   left: 72px;
 }
 
-#fixed-nav .side-bar div {
+.fixed-nav .side-bar div {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -136,21 +136,21 @@ header::before {
   font-size: 0.9rem;
 }
 
-#fixed-nav .side-bar div a {
+.fixed-nav .side-bar div a {
   color: #4d4d4d;
   padding-right: 17px;
 }
 
-#fixed-nav .side-bar div p {
+.fixed-nav .side-bar div p {
   text-transform: uppercase;
   letter-spacing: 1px;
 }
 
-#fixed-nav .fixed-shortcuts {
+.fixed-nav .fixed-shortcuts {
   text-align: center;
 }
 
-#fixed-nav .fixed-shortcuts ul {
+.fixed-nav .fixed-shortcuts ul {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -160,15 +160,15 @@ header::before {
           flex-direction: row;
 }
 
-#fixed-nav .fixed-shortcuts ul li {
+.fixed-nav .fixed-shortcuts ul li {
   padding: 5px 10px;
 }
 
-#fixed-nav .fixed-shortcuts ul li .active {
+.fixed-nav .fixed-shortcuts ul li .active {
   font-weight: 600;
 }
 
-#fixed-nav .fixed-shortcuts ul li a {
+.fixed-nav .fixed-shortcuts ul li a {
   text-transform: uppercase;
   font-size: 0.9rem;
   font-weight: 100;
@@ -176,47 +176,193 @@ header::before {
   color: #000;
 }
 
-#fixed-nav .fixed-shortcuts ul li a:hover {
+.fixed-nav .fixed-shortcuts ul li a:hover {
   color: #ababab;
 }
 
-#fixed-nav .fixed-shortcuts ul li .sub-menu {
+.fixed-nav .fixed-shortcuts ul li .visible {
+  display: block;
+}
+
+.fixed-nav .fixed-shortcuts ul li .sub-menu {
   display: none;
-}
-
-#fixed-nav .fixed-shortcuts ul li .sub-menu ul li {
-  color: #ffffff;
-  text-transform: uppercase;
-}
-
-#fixed-nav .fixed-shortcuts ul li .sub-menu ul li:hover {
-  color: #ababab;
-}
-
-#fixed-nav .fixed-shortcuts ul li .sub-menu:hover {
-  background-color: red;
-  display: -webkit-inline-box;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
   position: absolute;
+  background-color: #767676;
   width: 100%;
   height: 80px;
   top: 80px;
   left: 0;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
+}
+
+.fixed-nav .fixed-shortcuts ul li .sub-menu ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.fixed-nav .fixed-shortcuts ul li .sub-menu ul li {
+  color: #ffffff;
+  text-transform: uppercase;
+  padding: 10px;
+}
+
+.fixed-nav .fixed-shortcuts ul li .sub-menu ul li:hover {
+  color: #ababab;
+}
+
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+.sticky + .store-section {
+  padding-top: 90px;
+}
+
+.container {
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  width: 960px;
+  padding: 80px 0;
+}
+
+.store-section {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  background: #1a1a1a;
+}
+
+.store-section .container div {
+  width: 50%;
+  margin: 0 40px 0 0;
+}
+
+.store-section .container div img {
+  width: 100%;
+}
+
+.store-section .container .store-info {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  padding: 10px 20px;
+  margin: 0 0 0 40px;
+  color: #fff;
+}
+
+.store-section .container .store-info h1 {
+  text-transform: capitalize;
+  font-size: 1.7rem;
+  font-weight: 500;
+  margin: 15px 0;
+}
+
+.store-section .container .store-info p {
+  font-size: 1.1rem;
+  line-height: 1.4;
+  font-weight: 100;
+  margin: 15px 0;
+  text-align: center;
+}
+
+.store-section .container .store-info .store-links {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.store-section .container .store-info .store-links div {
+  border: 1px solid #fff;
+  font-size: 0.7rem;
+  text-transform: uppercase;
+  padding: 18px 30px;
+  margin: 15px 3px;
+  text-align: center;
+}
+
+.store-section .container .store-info .store-links div:hover {
+  background-color: #fff;
+  color: #000;
+}
+
+.quote-section {
+  width: 100%;
+  text-align: center;
+}
+
+.quote-section .container {
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 0 auto;
+}
+
+.quote-section .container .header {
+  margin-bottom: 40px;
+}
+
+.quote-section .container .header h2 {
+  font-size: 1.5rem;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+
+.quote-section .container .quote {
+  padding: 0 130px;
+}
+
+.quote-section .container .quote blockquote {
+  position: relative;
+}
+
+.quote-section .container .quote blockquote p {
+  font-size: 1.5rem;
+  font-style: italic;
+  color: #ababab;
+  text-align: left;
+  line-height: 1.5;
+  padding: 40px 0;
+}
+
+.quote-section .container .quote blockquote cite {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  font-size: 1.2rem;
+  color: #ababab;
+  text-align: end;
 }
 
 #placeholder {
   width: 100%;
-  height: 500px;
+  height: 5000px;
   background-color: goldenrod;
 }
 /*# sourceMappingURL=main.css.map */

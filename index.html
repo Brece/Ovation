@@ -43,57 +43,104 @@
     <!--end HEADER -->
 
     <!-- start NAV-BAR -->
-    <div id="fixed-nav">
-      <div class="side-bar">
-        <div>
-          <a href="#"><i class="fas fa-bars"></i></a>
-          <p>sidebar</p>
+    <div id="nav-container">
+      <div class="fixed-nav">
+        <div class="side-bar">
+          <div>
+            <a href="#"><i class="fas fa-bars"></i></a>
+            <p>sidebar</p>
+          </div>
         </div>
+        <nav class="fixed-shortcuts">
+          <ul>
+            <li>
+              <a href="#" class="active">home</a>
+            </li>
+            <li class="expanded-li">
+              <a href="#">about<i class="fas fa-sort-down"></i></a>
+              <div class="sub-menu sub-1">
+                <ul>
+                  <li>theme setup</li>
+                  <li>theme support</li>
+                  <li>guided transfer customers</li>
+                  <li>self-hosted customers</li>
+                  <li>themes by wordpress</li>
+                </ul>
+              </div>
+            </li>
+            <li class="expanded-li">
+              <a href="#">music<i class="fas fa-sort-down"></i></a>
+              <div class="sub-menu sub-2">
+                <ul>
+                  <li>chaos in reverse</li>
+                  <li>all together alone</li>
+                  <li>everything under the moon</li>
+                </ul>
+              </div>
+            </li>
+            <li>
+              <a href="#">videos</a>
+            </li>
+            <li>
+              <a href="#">photos</a>
+            </li>
+            <li>
+              <a href="#">news</a>
+            </li>
+            <li>
+              <a href="#">contact</a>
+            </li>
+          </ul>
+        </nav>
       </div>
-      <nav class="fixed-shortcuts">
-        <ul>
-          <li>
-            <a href="#" class="active">home</a>
-          </li>
-          <li>
-            <a href="#">about<i class="fas fa-sort-down"></i></a>
-            <div class="sub-menu">
-              <ul>
-                <li>theme setup</li>
-                <li>theme support</li>
-                <li>guided transfer customers</li>
-                <li>self-hosted customers</li>
-                <li>themes by wordpress</li>
-              </ul>
-            </div>
-          </li>
-          <li>
-            <a href="#">music<i class="fas fa-sort-down"></i></a>
-            <div class="sub-menu">
-              <ul>
-                <li>chaos in reverse</li>
-                <li>all together alone</li>
-                <li>everything under the moon</li>
-              </ul>
-            </div>
-          </li>
-          <li>
-            <a href="#">videos</a>
-          </li>
-          <li>
-            <a href="#">photos</a>
-          </li>
-          <li>
-            <a href="#">news</a>
-          </li>
-          <li>
-            <a href="#">contact</a>
-          </li>
-        </ul>
-      </nav>
     </div>
     <!-- end NAV-BAR -->
 
+    <!-- start store-section -->
+    <section class="store-section">
+      <div class="container">
+        <div>
+          <img src="/img/album-chaos-in-reverse.jpg.webp" alt="album cover" />
+        </div>
+        <div class="store-info">
+          <h1>chaos in reverse</h1>
+          <p>
+            Listen below and order your copy from Amazon, iTunes or your
+            favorite record store.
+          </p>
+          <div class="store-links">
+            <div>amazon</div>
+            <div>itunes</div>
+            <div>spotify</div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- end store-section -->
+
+    <!-- start quote-section -->
+    <section class="quote-section">
+      <div class="container">
+        <div class="header">
+          <h2>Review</h2>
+        </div>
+        <div class="quote">
+          <blockquote>
+            <p>
+              "Echo In Reverse is an ethereal statement of raw emotion that puts
+              Ovation’s full talent on display. Not only is it one of the best
+              releases of the year, but we’re almost certain we’ll still be
+              talking about it 100 years from now."
+            </p>
+            <cite>— InTune Indie</cite>
+          </blockquote>
+        </div>
+      </div>
+    </section>
+    <!-- end quote-section -->
+
     <div id="placeholder"></div>
+
+    <script src="/js/index.js" type="text/javascript"></script>
   </body>
 </html>
