@@ -360,6 +360,16 @@ header::before {
   text-align: end;
 }
 
+.bg-container {
+  background: url("../img/ovation-header-01.jpg") no-repeat center fixed;
+  background-size: cover;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  overflow: hidden;
+  z-index: 0;
+  max-height: 600px;
+}
+
 #placeholder {
   width: 100%;
   height: 5000px;

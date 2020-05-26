@@ -307,6 +307,16 @@ header::before {
 }
 // ==================== end QUOTE-SECTION ==================== //
 
+.bg-container {
+  background: url("../img/ovation-header-01.jpg") no-repeat center fixed; //'fixed' as last property for scrolling effect
+  background-size: cover;
+  box-sizing: border-box;
+  overflow: hidden;
+  z-index: 0;
+  // width: 100vw;
+  max-height: 600px;
+}
+
 #placeholder {
   width: 100%;
   height: 5000px;
