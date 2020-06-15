@@ -1,0 +1,42 @@
+.about {
+
+  // ==================== start ABOUT-SECTION ==================== //
+  .about-section {
+    width: 100%;
+    text-align: center;
+
+    .container {
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      margin: 0 auto;
+    }
+
+    .about {
+      padding: 0 40px;
+
+      p {
+        font-size: 1.2rem;
+        text-align: left;
+        line-height: 1.5rem;
+        padding: 10px 0;
+        color: $greyDark;
+      }
+
+      em{
+        font-style: italic;
+        font-weight: 600;
+      }
+      a{
+        font-style: italic;
+        color: $greyDark;
+
+        &:hover{
+          color: $greyLight;
+        }
+      }
+    }
+  }
+
+  // ==================== end ABOUT-SECTION ==================== //
+}
