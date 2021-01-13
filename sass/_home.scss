@@ -238,7 +238,7 @@
   // ==================== end BG-SECTION 2 ==================== //
   // ==================== start VIDEOS-SECTION ==================== //
   .video-section {
-    // height: calc(100vh - 80px);
+
     .container {
       flex-direction: column;
       width: 100%;
@@ -250,9 +250,10 @@
         width: 1230px;
         justify-content: space-between;
         padding: 40px 0;
-
+        
         .video {
           text-align: center;
+          transition: all 0.3s ease-in-out;
           h2 {
             font-size: 1.2rem;
             padding: 15px 0;
@@ -264,6 +265,10 @@
                 text-decoration: underline;
               }
             }
+          }
+          
+          &:hover{
+            opacity: 0.8;
           }
         }
       }
